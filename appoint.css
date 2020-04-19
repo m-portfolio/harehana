@@ -113,4 +113,5 @@ input,select,textarea {
     width: 150px;
     margin: 50px 0  0 50px;
     border-radius: 5px;
+    -webkit-appearance: none;
 }
