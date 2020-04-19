@@ -230,6 +230,7 @@ label .burger::after {
 
 .plan img{
     height: 100%;
+    object-fit: cover;
 }
 
 .photo {
