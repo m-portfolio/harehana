@@ -366,7 +366,7 @@ label .burger::after {
     justify-content: space-around;
     width: 70%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 25px;
 }
 
 
