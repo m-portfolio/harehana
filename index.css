@@ -229,7 +229,7 @@ label .burger::after {
 
 
 .plan img{
-    height: auto;
+    height: 100%;
 }
 
 .photo {
