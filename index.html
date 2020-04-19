@@ -15,7 +15,16 @@
         <meta property="twitter:card" content="summary_large_image">
         <meta property="fb:app_id" content="690927898114323">
         
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <script type="text/javascript">
+var ua = navigator.userAgent;
+if ((ua.indexOf('iPhone') > 0) || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0)) {
+    // スマホのとき
+    $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />');
+}else{
+    // PC・タブレットのとき
+    $('head').prepend('<meta name="viewport" content="width=1280" />');
+}
+</script>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
         <link rel="stylesheet" href="common.css">
