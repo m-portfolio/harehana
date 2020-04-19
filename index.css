@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/*　ハンバーガーメニュー　*/
+#hamburger {
+    opacity: 0;
+    position: fixed;
+}
+
+label .burger {
+    position: fixed;
+    top: 1.7rem;
+    left: 2.5rem;
+    z-index: 3;
+    width: 2.5rem;
+    height: 2rem;
+}
+
+
+label .burger::before,
+label .burger::after,
+label .burger .bar {
+    position: absolute;
+    left: 0;
+    height: 0.25rem;
+    border-radius: 5px;
+    background: #fff;
+    content: "";
+    transition: all 0.5s;
+    width: 100%;
+}
+
+label .burger::before {
+    top: 0;
+    transform-origin: top left;
+}
+
+label .burger .bar {
+    top: 45%;
+}
+
+label .burger::after {
+    bottom: 0;
+    transform-origin: bottom left;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#menu::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    width: 25rem;
+    background: #d62956;
+    content: "";
+    transform: skewX(15deg) translateX(-100%);
+    transform-origin: bottom left;
+    transition: transform 0.3s;
+}
+
+#menu a {
+    margin: 1.3rem 0;
+    padding: 0.2rem 3rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transform: translateX(-100%);
+    transition: all 0.15s, transform 0.5s;
+    transition-timing-function: cubic-bezier(0.19,1,0.22,1);
+}
+
+
+#hamburger:checked+label .burger::before,
+#hamburger:checked+label .burger::after{
+    width: 105%;    
+}
+
+#hamburger:checked+label .burger::before {
+    transform: rotate(45deg);
+}
+
+#hamburger:checked+label .burger::after {
+    transform: rotate(-45deg);
+}
+
+#hamburger:checked+label .burger .bar {
+    transform: scale(0);
+}
+
+
+#hamburger:checked ~ #menu::before {
+    transform: skewX(15deg) translateX(0);
+}
+
+#hamburger:checked~#menu a {
+    transform: skewX(0deg) translateX(0);
+}
+
+
+#hamburger:checked~ .light-dark {
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/*メインページ*/    
+.main {
+    background-image: url("images/p7145.jpg");
+    background-size: cover;
+    color: white;
+    margin-top: 5.2rem;
+    width: 100%;
+    height: 60rem;
+/*角をカーブさせる*/
+    border-bottom-right-radius: 300px;
+    border-top-left-radius: 300px; 
+/*メインページの左上が、起点になる*/
+    position:relative;
+    
+    
+}
+
+.main-text {
+/*メインページの左上からの距離*/
+    position: absolute;
+    bottom: 1.4rem;
+    left: 2rem;
+    
+}
+
+.main h2 {
+    font-size: 2rem;
+}
+
+.main h1 {
+    font-size: 6rem;
+}
+
+.main p {
+    font-size: 1.8rem;
+}
+
+
+/*サブページ*/
+.sub {
+    background-image: url(images/asanoha-400px.png);
+    text-align: center;
+    font-size: 1.8rem;
+    color: #7c5341; 
+    padding: 4rem;
+    line-height: 4rem;
+}
+
+
+
+/*プラン*/
+.plan {
+    background-image: url(images/asanoha-400px.png);
+    padding-top: 150px;
+}
+
+
+/*プラン見出し*/
+.plan h2 {
+    font-size: 2.5rem;
+    color: #8e0040;
+    position:relative;
+    top: 50px;
+    text-align: center;
+    z-index: 20;
+    margin-bottom: 40px;
+}
+
+    
+.plan h2 span {
+    color: white;
+}
+
+
+/*プラン内容*/
+.plan-content {
+    display: flex;
+}
+
+.plan-headline {
+    width: 300px;
+    padding: 0 0 50px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+
+.plan-content:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+
+.content-inner {
+    width: 50%;
+/*孫要素の、plan-textの高さを揃えるためのflex */
+    display: flex;
+}
+
+
+.plan-text {
+    width: 100%;
+    background-color: #8e0040;
+    padding: 15% 0;
+}
+
+
+.plan img{
+    height: auto;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+
+.plan h3, .plan p {
+    text-align: center;
+    color:  white; 
+}
+
+.plan h3 {
+    font-size: 2.5rem;
+}
+
+
+.plan p {
+    margin-top: 5rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+
+
+
+/*四季の楽しみ方*/
+.shiki {
+    background-image: url(images/asanoha-400px.png);
+    position: relative;
+    padding: 300px 0 50px;
+}
+
+/*四季見出し*/
+.shiki-headline {
+    width: 400px;
+    padding: 0 0 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.shiki h2 {
+    color: #8e0040;
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    top: -15px;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.shiki span {
+    color: white;
+}
+
+
+
+.shiki-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0 100px;
+    width: 100%;
+}
+
+
+.shiki-img {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  270px;       /* ※縦横を同値に */
+    height: 270px;       /* ※縦横を同値に */
+}
+
+.shiki h3, .shiki p {
+    text-align: center;
+    color: #7c5341;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+.shiki h3 {
+    font-size: 2.5rem;
+}
+
+
+
+
+/*予約、アクセス*/
+.inquiry {
+    background-image: url(images/asanoha-400px.png);
+    color: #7c5341; 
+    font-size: 1.8rem;
+    line-height: 4.3rem;
+    width: 100%;
+    padding: 150px 0 150px;
+}
+
+
+/*問い合わせ見出し*/
+.inquiry-headline {
+    width: 500px;
+    padding: 0 0 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+.inquiry h2 {
+    font-size: 3rem;
+    color: #8e0040;
+    text-align: center;
+    position: relative;
+    top: -25px;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+
+.inquiry span {
+    color: white;
+}
+
+
+
+
+.inquiry-wrap {
+    border: 4px solid #8e0040;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.inquiry-text {
+    text-align: center;
+}
+
+
+
+
+.inquiry-text h4 {
+    font-size: 2.2rem;
+    
+}
+
+.inquiry-text h3 {
+    font-size: 3.5rem;
+    margin-top: 15px;
+}
+
+
+
+
+.inquiry a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.btn {
+    border-radius: 7px;
+}
+
+
+.appoint {
+    background-color: #008c55;
+    text-align: center;
+    margin-top: 15px;
+   
+}
+
+.access {
+    background-color: #d79c11;
+    margin-top: 40px;
+}
+
+
+
