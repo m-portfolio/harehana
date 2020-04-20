@@ -333,7 +333,7 @@ label .burger::after {
 
 
 
-/*見出し　丸マーク*/
+/*見出し　丸マーク 問い合わせ見出しだけずらしてる*/
 .circle-mark {
     width: 130px;
     height: 130px;
@@ -341,7 +341,7 @@ label .burger::after {
     border-radius: 50%;
     position: absolute;
     top: -60px;
-    left: 32%;
+    left: 35%;
     z-index: 1;
 }
 
