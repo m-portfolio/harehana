@@ -88,7 +88,10 @@
     #menu::before {
         width: 33rem;
     }
+   
     
+    
+    /*iPhoneのみエバーのデバッグ*/
        
     .header-btn a {
         font-size: 1.5rem;
@@ -116,7 +119,11 @@
         top: 1.7rem;
         left: 4rem;
 }
-    
+   
+    .btn {
+        border-radius: 7px;
+        width: 13rem;
+    }
 
 
 }
