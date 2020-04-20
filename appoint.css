@@ -103,6 +103,7 @@ input,select,textarea {
     color: #7c5341;;
     border: 1px #ffffff;
     margin: 10px;
+    -webkit-appearance: none;
 }
 
 
