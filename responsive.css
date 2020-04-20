@@ -3,7 +3,7 @@
 /*タブレット用のCSS*/
 @media (max-width:1024px){
     .plan img{
-        height: auto;
+        height: 100%;
         object-fit: cover;
     }
 
