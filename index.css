@@ -408,6 +408,7 @@ label .burger::after {
 
 .btn {
     border-radius: 7px;
+    width: 14rem;
 }
 
 
