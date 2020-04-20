@@ -331,6 +331,21 @@ label .burger::after {
 }
 
 
+
+
+/*見出し　丸マーク*/
+.circle-mark {
+    width: 130px;
+    height: 130px;
+    background-color: #8e0040;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 32%;
+    z-index: 1;
+}
+
+
 /*問い合わせ見出し*/
 .inquiry-headline {
     width: 500px;
