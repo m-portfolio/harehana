@@ -91,8 +91,7 @@
    
     
     
-    /*iPhoneのみエバーのデバッグ*/
-       
+/*iPhoneのみエバーのデバッグ*/    
     .header-btn a {
         font-size: 1.5rem;
     }
@@ -103,26 +102,18 @@
         width: 80%;
     }
 
- 
-  
-/*ヘッダー 予約ボタン*/
+    
     .header-btn {
         position: fixed;
         top: 1.6rem;
         right: 1rem;
         width: 13rem;
     }
-  
-    
-    label .burger {
-        position: fixed;
-        top: 1.7rem;
-        left: 4rem;
-}
-   
+ 
     .btn {
         border-radius: 7px;
         width: 13rem;
+        font-size: 1.5rem;
     }
 
 
