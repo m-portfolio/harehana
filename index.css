@@ -404,11 +404,12 @@ label .burger::after {
     color: white;
     text-decoration: none;
     padding: 10px;
+    text-align: center;
 }
 
 .btn {
     border-radius: 7px;
-    width: 14rem;
+    width: 13rem;
 }
 
 
