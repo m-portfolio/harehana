@@ -90,25 +90,25 @@
     }
     
        
-.header-btn a {
-    font-size: 1rem;
+    .header-btn a {
+        font-size: 1rem;
     }
     
     
-.inquiry-wrap {
-    padding: 35px;
-    width: 80%;
-}
+    .inquiry-wrap {
+        padding: 35px;
+        width: 80%;
+    }
 
  
   
 /*ヘッダー 予約ボタン*/
-.header-btn {
-    position: fixed;
-    top: 1.6rem;
-    right: 2rem;
-    width: 13rem;
-}
+    .header-btn {
+        position: fixed;
+        top: 1.6rem;
+        right: 1rem;
+        width: 13rem;
+    }
   
     
 
