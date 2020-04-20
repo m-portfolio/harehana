@@ -334,15 +334,10 @@ label .burger::after {
 
 
 /*見出し　丸マーク 問い合わせ見出しだけずらしてる*/
-.circle-mark {
-    width: 130px;
-    height: 130px;
-    background-color: #8e0040;
-    border-radius: 50%;
+.inquiry .circle-mark {
     position: absolute;
     top: -60px;
     left: 36%;
-    z-index: 1;
 }
 
 
