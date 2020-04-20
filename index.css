@@ -341,7 +341,7 @@ label .burger::after {
     border-radius: 50%;
     position: absolute;
     top: -60px;
-    left: 35%;
+    left: 36%;
     z-index: 1;
 }
 
