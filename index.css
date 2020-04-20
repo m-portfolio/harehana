@@ -404,7 +404,6 @@ label .burger::after {
     color: white;
     text-decoration: none;
     padding: 10px;
-    text-align: center;
 }
 
 .btn {
@@ -421,6 +420,7 @@ label .burger::after {
 
 .access {
     background-color: #d79c11;
+    text-align: center;
     margin-top: 40px;
 }
 
