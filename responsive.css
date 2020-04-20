@@ -2,6 +2,10 @@
 
 /*タブレット用のCSS*/
 @media (max-width:1024px){
+    .plan img{
+        height: auto;
+        object-fit: cover;
+    }
 
 /*メインページ*/
     .plan h3 {
