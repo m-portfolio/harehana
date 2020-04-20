@@ -103,8 +103,12 @@ input,select,textarea {
     color: #7c5341;;
     border: 1px #ffffff;
     margin: 10px;
+}
+
+input,select,textarea {
     -webkit-appearance: none;
 }
+
 
 
 /*送信ボタン*/
