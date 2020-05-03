@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+.access {
+    background-image: url(images/asanoha-400px.png);
+    color: #7c5341;
+    padding: 300px 0;
+}
+
+/*アクセス見出し*/
+.access-headline {
+    width: 300px;
+    padding: 0 0 50px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+.access h1 {
+    font-size: 3rem;
+    color: #8e0040;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.access span {
+    color: white;
+}
+
+
+.access-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 50px 100px;
+    border: 4px solid #8e0040;
+    border-radius: 10px;
+}
+
+.access-text {
+    margin-right: 50px;
+    width: 45%;
+}
+
+.access-text h2 {
+    font-size: 3rem;
+}
+
+.access-map {
+    width: 49%;
+}
+
+.access-map iframe {
+    width: 100%; 
+    border-radius: 7px;
+}
+
+.access p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-top: 30px;
+}
