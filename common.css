@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sawarabi Mincho",serif;
+    list-style: none;
+    text-decoration: none;
+}
+    /*シュウさんのReset.cssコピペ*/
+        body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFFFFF;
+        }
+        
+        h1,h2,h3,h4,h5 {
+        margin: 0;
+        padding: 0;
+        font-weight:normal;
+        }
+        
+        div {
+        margin: 0;
+        padding: 0;
+        }
+        
+        p {
+        margin: 0;
+        padding: 0;
+        }
+        
+        a {
+        text-decoration:none;
+        color: #000000;
+        }
+        
+        a:visited {}
+        a:hover {}
+        a:active { text-decoration: underline; }
+        
+        table,th,td {
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+        font-size: 1em;
+        }
+        
+        ul,ol,li,dl,dt,dd {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        list-style-position: outside;
+        font-size: 12px;
+        }
+        
+        img {
+        margin: 0;
+        padding: 0;
+        border: none;
+        line-height: 0;
+        }
+        
+        form {
+        margin: 0;
+        padding: 0;
+        }
+        
+        input,select,textarea {
+        margin: 0;
+        padding: 0;
+        }
+        
+        textarea:focus,
+        input:focus {
+          outline: none;
+          background-color: #FFFFEE;
+        }
+        
+        pre,address,citi {
+        margin: 0;
+        padding: 0;
+        }
+        
+        object,embed {
+        margin: 0;
+        padding: 0;
+        }
+    /*シュウさんのコピペ END*/
+
+body{
+    background-image: url(../images/common/asanoha-400px.png);
+}
+
+
+/*header*/
+header {
+    width: 100%;
+    background-color:  #ddaf63;
+    box-shadow: 0 0 15px #dddddd;
+    color: white; 
+    position: fixed;
+    top: 0;
+    z-index: 90;
+    padding: 5px 0;
+}
+
+
+.header-title {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+/*ヘッダー 予約ボタン*/
+.header-btn {
+    position: fixed;
+    top: 1.6rem;
+    right: 2.5rem;
+    width: 13rem;
+}
+
+.header-btn a {
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #3d9055;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+/*header END*/
+
+
+
+/*見出し　丸マーク*/
+.circle-mark {
+    width: 130px;
+    height: 130px;
+    background-color: #8e0040;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 30%;
+    z-index: 1;
+}
+/*見出し　丸マーク END*/
+
+
+
+
+/*footer*/
+footer {
+    background-color: #ddaf63;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+
+footer p {
+    font-size: 1.8rem;
+}
+
+.footer-left {
+    margin-top: 120px;
+}
+
+
+.icon-wrap {
+    display: flex;
+}
+
+.footer-right p {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+
+.instagram img, .twitter img{
+    width: 80px;
+    height: 80px;
+    margin: 15px 0;
+}
+
+.twitter img {
+    margin:  15px 30px 15px 70px;
+}
+/*footer END*/
+
+
+
+
+/*JS*/
+.sa {
+  opacity: 0;
+  transition: all 2s ease;
+}
+ 
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+ 
+
+ 
+.sa--scaleUp {
+  transform: scale(1.5);
+}
+ 
+.sa--scaleDown {
+  transform: scale(1.5);
+}
+
+ 
+.sa sa--up{
+    transform: translate(0, 100px);
+}
