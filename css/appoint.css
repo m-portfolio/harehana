@@ -120,3 +120,8 @@ select {
     border-radius: 5px;
     -webkit-appearance: none;
 }
+
+/* textarea 大きさ固定 */
+textarea {
+    resize: none;
+  }
